@@ -1,0 +1,89 @@
+body {
+  background: #64d5e4;
+  font: normal 14pt Roboto;
+  min-block-size: 100%;
+  min-inline-size: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  display: grid;
+  place-content: center;
+  font-family: system-ui, sans-serif;
+}
+header {
+  color: #ffffff;
+  text-align: center;
+}
+section {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  width: 500px;
+  margin: auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.227);
+}
+/*efeito texto */
+h1::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+h1:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+h1::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: #660e0e;
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+h1 {
+  position: relative;
+  font-size: 3rem;
+}
+
+html {
+  block-size: 100%;
+  inline-size: 100%;
+}
+
+/* fim efeito */
+
+footer {
+  color: #ffffff;
+  text-align: center;
+  font-style: italic;
+}
+
+div {
+  text-align: center;
+  padding: 8px;
+}
+
+#imgManha {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.227);
+}
+#imgTarde {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.227);
+}
+#imgNoite {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.227);
+}
